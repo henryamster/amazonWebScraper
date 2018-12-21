@@ -30,13 +30,15 @@ const download = require('image-downloader');
         const filtered = products.filter(function(product) {
             return product.productName != 'undefined';
         });
+        //check for directory existence, if needed mkdir
+        !fs.existsSync('downloads/' + s) && fs.mkdirSync('downloads/' + s);
         //if no output filename is specified, output to example-output.json
-        let outputFile = (argv[3] != undefined) ? argv[3] : 'example-output';
-        fs.writeFile(outputFile + '.json', JSON.stringify(filtered), function(err) {
+        let outputFile = (argv[3] != undefined) ? argv[3] : s;
+        fs.writeFile('downloads/' + s + '/' + outputFile + '.json', JSON.stringify(filtered), function(err) {
             if (err) throw err;
             console.log('File saved as ' + outputFile + '.json ');
         });
-        !fs.existsSync('downloads/' + s) && fs.mkdirSync('downloads/' + s);
+
         for (product in filtered) {
             const options = {
                 url: filtered[product].image,
