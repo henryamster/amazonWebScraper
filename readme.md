@@ -15,9 +15,8 @@ to use it type:
 
 > node amascraper.js searchTerm outputFileName
 
-into your console where searchTearm is the term for the item you're looking for and outputFileName will be the JSON file outputted. Your images will be in a folder named after your search term. 
+into your console where searchTearm is the term for the item you're looking for and outputFileName will be the JSON file outputted (optional, defaults to searchTerm). Your images will be in a folder named after your search term. if you don't include a query parameter, I hope you like pants! cause you're gonna have fifty pictures of them without a query string!
 
-Simple as that!
 
 ### -Henry Fritz
 #### [https://henryfritz.xyz/](https://henryfritz.xyz/)
