@@ -6,12 +6,16 @@ Thanks for checking out my repository. I built this tool for folks out there who
 ## How to use it:
 
 first, you need to make sure you have node installed [https://nodejs.org/](https://nodejs.org/)
+
 after you download the zip archive, navigate to the directory containing amascraper.js in your console.
+
 type npm install and give it a couple of minutes- the dependencies are very large.
+
+to use it type:
 
 > node amascraper.js searchTerm outputFileName
 
-where searchTearm is the term for the item you're looking for and outputFileName will be the JSON file outputted. Your images will be in a folder named after your search term. 
+into your console where searchTearm is the term for the item you're looking for and outputFileName will be the JSON file outputted. Your images will be in a folder named after your search term. 
 
 Simple as that!
 
